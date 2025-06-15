@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Mecánicas y sistematización</title>
+</head>
+<body>
+        <a href="http://127.0.0.1:5500/uc%20simulator%20html/index.html" target="_self" title="Ah shit, here we go again"> volver al inicio</a>
+        <h1>Mecánicas y sistematización</h1>
+
+        <h3>Sistema de Tiempo:</h3>
+        <p>
+            El juego consta de 4 apartados de tiempo para conformar un dia, cada uno con 4 turnos de correspondencia.(un turno se compone de una lanzada de dados y una conversación en respuesta).
+        </p>
+        <h4>Llegar de la universidad</h4>
+        <p>Dependiendo de en donde vivas y en que facultad estudies, se dificultará la llegada a la facultad correspondiente, las camionetas, el pasaje o la caminata pueden complicar tu llegada a la uni, haciendo un problema el ahorro de recursos.</p>
+
+        <h4>Estudiar en la Universidad</h4>
+        <p>Tienes que mantener tu promedio de notas para pasar de semestre, dos dados determinan cuando pasas de turno, uno determina el evento del profesor y otro los resultados del examen.</p>
+
+        <h4>Tiempo Libre de la Universidad</h4>
+        <p>En el primer bloque te permite interactuar con otros y explorar el mapa, se suele aprovechar para comprar y comer/beber, para jugar y socializar en búsqueda de informaciones, datos o descubrimientos en general; en el segundo bloque u hora de labor te toca ocuparte de tus misiones de juego, que son los eventos que te permiten asegurar tu prestigio y/o dinero del juego. Ya sea que tengas un trabajo o una ocupación con los "amigos de los amigos".</p>
+        
+        <h4>Regresar de la universidad</h4>
+        <p>Culminado tu dia universitario, debes regresar a tu hogar, el regreso es parecido al viaje de ida, pero con dos posibilidades más: el desvio del viaje, que te permite no volver directamente tu casa sino viajar por dentro o fuera del mapa; y las interrupciones del viaje, pues de salida pueden suceder más eventos aleatorios que de llegada que generen dificultades de volver a casa ileso.</p>
+
+        <h3>Ficha técnica:</h3>
+        <ul>
+            <li>
+                <h4>Nombre:</h4>
+                <p>Identificación de tu personaje.</p>
+            </li>
+            <li>
+                <h4>Facultad:</h4>
+                <p>Determina tu entorno de estudio e interacción principal, además de lo que te ocuparás en tu tiempo de labor, y el grupo que apoyas en  las disputas. Te adjudica un pecado capital como debilidad.</p>
+            </li>
+            <li>
+                <h4>Carrera:</h4>
+                <p>Dictamina tu virtud y el título que te llevas.</p>
+            </li>
+            <li>
+                <h4>Vida:</h4>
+                <p>Tu medidor de salud, si llega a bajo caerás incosciente y tendrán que salvarte, si llega a 0 habrás muerto y el juego habrá terminado. Se regenera con comida.</p>
+            </li>
+            <li>
+                <h4>Estamina:</h4>
+                <p>Tu medidor de energía, libre de acción se gasta en trayectos o emergencias, en acción se gasta a uso personal, si llega a bajo tus acciones físicas se entorpeceran, si llega a 0 caeras desgastado. Se regenera con bebida.</p>
+            </li>
+            <li>
+                <h4>Ánimos:</h4>
+                <p>Tu medidor de estabilidad emocional, dictamina la ventaja o desventaja que posees al enfrentarte a tus notas, el gasto estamínico o el día a día. Si llega a bajo se alteraran a negativo tus probabilidades, si llega a 0 dejas la carrera.</p>
+            </li>
+            <li>
+                <h4>Notas:</h4>
+                <p>Tu promedio de rendimiento academico en la universidad. Debes mantenerlas en media para pasar el año. Si llegas a bajo peligras la reparación, si llega a 3 o menos estas raspado.</p>
+            </li>
+            <li>
+                <h4>Dinero:</h4>
+                <p>Tu presupuesto para sobrevivir el día a día universitario, se divide en tres componentes: Bolívares en Efectivo, Bolívares en Cuenta, y por último, Divisa. El jugador se encontrará con situaciones específicas en las cuales tendrá que cambiar de moneda con la cual pagar para sacar beneficio. Si tus ahorros decaen, se dificulta sobrevivir el día a día, debido a que careceras de servicios para comer, beber o incluso trasladarte dentro y fuera de la universidad.</p>
+            </li>
+            <li>
+                <h4>Prestigio:</h4>
+                <p>Determina el nivel de conocimiento y leyenda de la Universidad que eres, tu nivel de prestigio te permite tomar ventaja respecto a la recluta de personal a tu grupo para misiones.</p>
+            </li>
+        </ul>
+
+        <h3>Probabilidades del dado:</h3>
+        <ul>
+            <li>
+                <h4>Dado común</h4>
+                <ul>
+                    <li>1,2: situación negativa</li>
+                    <li>3,4: Situación neutra</li>
+                    <li>5,6: Situación positiva</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Dado negativo:</h4>
+                <ul>
+                    <li>1,2,3:Situación negativa</li>
+                    <li>4,5:Situación neutra</li>
+                    <li>6:Situación positiva</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Dado positivo:</h4>
+                <ul>
+                    <li>1:Situación negativa</li>
+                    <li>2,3:Situación neutra</li>
+                    <li>4,5,6:Situación positiva</li>
+                </ul>
+            </li>
+        </ul>
+    <h3>Sistema de Combate:</h3>
+    <h4>Cuerpo a Cuerpo</h4>
+    <p>El combate cuerpo a cuerpo es la única forma que tiene un jugador de herir a otro sin objetos, Ataca y defiende usando únicamente sus brazos y piernas, por ende, requiere cercanía para atacar.</p>
+    <p>El combate lleva una estructura de turno movimiento-ataque-movimiento, para moverte no requieres dado, pero para atacar requieres de acercarte; a su vez, para no recibir ataques precisos requieres alejarte. </p>
+    <p>Se utiliza un único dado para lanzar un golpe o patada, el concepto de turno predeterminado es acercarse-golpear-retroceder, puedes retroceder todos los turnos para evitar el conflicto(u obligar a tu rival a tomar iniciativa), a la vez, puedes lanzar dos golpes en lugar de retroceder, pero eso puede exponerte a ser golpeado mutiples veces el siguiente turno por tu rival; la última que puedes hacer es acercarte más de una vez(hacer contacto) eto mejora la presición de un golpe, pero te deja expuesto a recibir uno del rival.</p>
+        <ul>
+            <li>
+                <h4>Golpe:(5 de daño)</h4>
+                <ul>
+                    <li>1,2,3:Fallas</li>
+                    <li>4,5:acierto bloqueable</li>
+                    <li>6:Acierto</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Patada:(10 de daño)</h4>
+                <ul>
+                    <li>1:falla y contraataque</li>
+                    <li>2,3:falla</li>
+                    <li>4,5:acierto bloqueable</li>
+                    <li>6:acierto</li>
+                </ul>
+            </li>
+        </ul>
+        <h4><span>Bloqueo:</span></h4>
+        <p>Bloquear supone dividir a la mitad entera el número de daño causado. Se ejecuta lanzando un dado(basta con que acierte para que se cumpla, sin importar el número). Un jugador sólo puede bloquear 2 veces antes de un timefreeze de 3 turnos.</p>
+        <ul>
+            <li>
+                <h4>bloquear:</h4>
+                <ul>
+                    <li>1,2,3: fallo</li>
+                    <li>4,5: acierto</li>
+                    <li>acierto y cercanía(mejora presición)</li>
+                </ul>
+            </li>
+        </ul>
+        <h4><span>Esquive:</span></h4>
+        <p>Esquivar un golpe asegura evitar el daño de un ataque, pero al ser tan complicado suele tener riesgos a exposiciones.</p>
+        <ul>
+            <li>
+                <h4>Esquivar:</h4>
+                <ul>
+                    <li>1,2: Fallo y exposición(no puedes bloquear el siguiente ataque)</li>
+                    <li>3,4: fallo</li>
+                    <li>5,6: acierto</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Al llegar al 75% de la vida empiezan a salir críticos(aumentos de daño cuando el golpe acierta con 6) a partir de ahi, cualquier golpe que entre limpio causará sangrado 1, si el jugador llega a la mitad de la vida puede ser noqueado o lesionado con un crítico, lo que termina el combate automáticamente y deja con efectosadversos a tu rival.
+        El uso de estamina te permite duplicar el daño de cualquiera de tus golpes, siendo que a pesar de un bloqueo se llevarí un gran porcentaje.</p>
+        <h4>Arma Blanca:</h4>
+    <p>El uso de un arma blanca puede agilizar el dañar de gravedad a un enemigo en combate; al igual que en el cuerpo a cuerpo, requiere estar en cercanía para atacar. </p>
+    <p>Se compone de dos dados, uno decide el fallo o acierto, y el otro la zona donde acertó. Un acierto crítico supone una zona donde el drenaje de sangre de la herida es significativo (Sangrado doble en extremidades, sangrado triple en cuerpo).</p>
+            <ul>
+            <li>
+                <h4>Dado de acierto:</h4>
+                <ul>
+                    <li>1: fallo y reacción</li>
+                    <li>2,3: fallo</li>
+                    <li>4,5: acierto </li>
+                    <li>6: acierto crítico </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Dado de zona:</h4>
+                <ul>
+                    <li>1,2: Brazos</li>
+                    <li>3,4: Piernas</li>
+                    <li>5,6: Cuerpo</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Arma de fuego:</h4>
+    <p>La pelea con arma de fuego se compone de una estructura de turnos del tipo movimiento-ataque-movimiento.
+el primer turno de movimiento define tu postura de ataque, sea que elijas atacar al descubierto o a la encubrida; el segundo turno es el de ataque,aqui si o si toca disparar para que el rival no gane terreno(o en su defecto tu no pierdas el turno en vano) y el tercero es un opcional que define tu postura de reacción al rival, usualmente lo mejor es cubrirse, pero existe la posibilidad de arriesgarte a moverte cerca o disparar de nuevo(moverte te da una meyor seguridad y disparar puede asegurarte la victoria) con el riesgo de quedar aun mas expuesto si fallas. </p>
+    <p>Atacar al descubierto supone un aumento en tu presición, pero aumenta la vulnerabilidad de ser disparado el siguiente turno; por el contrario, atacar a la encubrida te permite defenderte mejor de un disparo rival, pero tu presición se verá afectada.</p>
+    <p>Al igual que el combate con armas blancas, un disparo con un arma de fuego se compone de dos dados; uno decide el fallo o acierto, y el otro la zona donde acertó. Cualquier zona donde una bala acierte la deja inutilizable para el usuario:</p>
+    <ol>
+        <li>Si te dan en un brazo no puedes bloquear en combate(y dependiendo de cual brazo sea, portar un arma).</li>
+        <li>Si te dan en una pierna no puedes trasladarte en trayectorias largas ni correr.</li>
+        <li>Si te dan en el cuerpo no puedes esquivar ataques ni aprovechar tu agilidad(Salto, Escalar, Cargar).</li>
+    </ol>
+            <ul>
+            <li>
+                <h4>Dado de acierto:</h4>
+                <ul>
+                    <li>1,2,3: fallas</li>
+                    <li>4,5: acierto evitable</li>
+                    <li>6:acierto perfecto</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Dado de zona:</h4>
+                <ul>
+                    <li>1,2: Brazos</li>
+                    <li>3,4: Piernas</li>
+                    <li>5: Cuerpo</li>
+                    <li>6: Cabeza(insta kill)</li>
+                </ul>
+            </li>
+        </ul>
+    <p>Todas las armas generán el mismo daño(exceptuando la escopeta), pero se diferencian por cualidades especiales entre cada una.</p>
+
+    <h3>Reparación:</h3>
+    <p>Ir a reparación es la última oportunidad para no perder el año, y quedar por ende, fuera de la carrera ese año. Se trata de un battle royale en el cual tendrás que descender el cerro antes que cualquier otro competidor, eliminando a aquel que se cruce en tu camino. </p>
+    <p>Poseeras un arma de fuego y solo una comida y bebida. Todo lo demás tendrás que conseguirlo en el mapa.</p>
+</body>
+</html>
